@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="caixaConteudo">
+            <h1>Somando Valores</h1>
+            <input type="number" name="campo1" id="campo1"> +
+            <input type="number" name="campo2" id="campo2">
+            <input class="somar" type="button" value="Somar" onclick="somar()">
+            <div id="res">Resultado: </div>
+        </div>
+    </div>
+
+    <script>
+        function somar(){
+            var campo1 = window.document.getElementById("campo1")
+            var campo2 = window.document.querySelector("input#campo2")
+            var n1 = Number(campo1.value)
+            var n2 = Number(campo2.value)
+            var res = window.document.getElementById("res")
+            var s = n1 + n2
+            res.innerHTML = `Resultado: <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

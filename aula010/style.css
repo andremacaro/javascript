@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: aliceblue;
+    border-style: solid;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.caixaConteudo {
+    background-color: antiquewhite;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    gap: 10px;
+}
+
+h1 {
+    height: 100px;
+    background-color: cadetblue;
+    justify-content: center;
+}
+
+.somar {
+    align-items: flex-end;
+    width: 100px;
+    height: 30px;
+}
+
+input {
+    height: 100px;
+    width: 200px;
+    justify-content: center;
+}
