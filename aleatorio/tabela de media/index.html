@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <caption class="titulos">Média das Notas</caption>
+       <thead class="titulos">
+           <tr>
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Disciplinas</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="col">Média</th>
+           </tr>
+           <tr>
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
+           </tr>
+       </thead>
+
+       <tbody>
+            <tr>
+                <th rowspan="4"  scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>
+                    <input type="number" name="notas" id="nota1mat">
+                </td>
+                <td>
+                    <input type="number" name="notas" id="nota2mat">
+                </td>
+                <td id="mediaMat">0.0</td>
+            </tr>   
+            
+            <tr>
+                <td>Física</td>
+                <td>
+                    <input type="number" name="notas" id="nota1fis">
+                </td>
+                <td>
+                    <input type="number" name="notas" id="nota2fis">
+                </td>
+                <td id="mediaFis">0.0</td>
+            </tr>
+
+            <tr>
+                <td>Química</td>
+                <td>
+                    <input type="number" name="notas" id="nota1qui">
+                </td>
+                <td>
+                    <input type="number" name="notas" id="nota2qui">
+                </td>
+                <td id="mediaQui">0.0</td>
+            </tr>
+
+            <tr>
+                <td>Biologia</td>
+                <td>
+                    <input type="number" name="notas" id="nota1bio">
+                </td>
+                <td>
+                    <input type="number" name="notas" id="nota2bio">
+                </td>
+                <td id="mediaBio">0.0</td>
+            </tr>
+
+            <tr class="titulos">
+                <th colspan="4" scope="row">Média de Exatas</th>
+                <td id="mediaExatasa">0.0</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>
+                    <input type="number" name="notas" id="nota1his">
+                </td>
+                <td>
+                    <input type="number" name="notas" id="nota2his">
+                </td>
+                <td id="mediaHis">0.0</td>
+            </tr> 
+
+            <tr>
+                <td>Geografia</td>
+                <td>
+                    <input type="number" name="notas" id="nota1geo">
+                </td>
+                <td>
+                    <input type="number" name="notas" id="nota2geo">
+                </td>
+                <td id="mediaGeo">0.0</td>
+            </tr>
+
+            <tr class="titulos">
+                <th colspan="4" scope="row">Média de Humanas</th>
+                <td id="mediaHumanas">0.0</td>
+            </tr>
+       </tbody>
+    </table>
+</body>
+<script src="script.js"></script>
+</html>
