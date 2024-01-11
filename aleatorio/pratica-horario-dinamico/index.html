@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div{
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body onload="horaDodia()">
+    <div id="div">
+        <h1>Hora do dia</h1>
+    </div>
+</body>
+<script>
+    var horario = new Date()
+    var hora = horario.getHours()
+    var caixa = document.getElementById("div")
+    console.log(`${hora}:${minutos}`)
+
+    function horaDodia() 
+    {
+        if (hora <= 12){
+            caixa.style.backgroundColor = "lightblue"
+        }
+        else if (hora < 18){
+            caixa.style.backgroundColor = "orange"
+        }
+        else{
+            caixa.style.backgroundColor = "darkblue"
+        }
+    }
+</script>
+</html>
