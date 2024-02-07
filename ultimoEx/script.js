@@ -13,6 +13,8 @@ function adicionar(){
         item.text = `Vetor ${n} adicionado`
         output.appendChild(item)
     }
+    input.value = ''
+    input.focus()
 }
 
 function finalizar(){
